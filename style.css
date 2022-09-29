@@ -51,7 +51,7 @@ body{
     margin-left:4vw;
     word-spacing: 3px;
 }
-#intro-name h2,h3,h4{
+.intro-style{
     background: #3AC0CF;
     background: linear-gradient(to right, #3AC0CF 0%, #CF1512 100%);
     -webkit-background-clip: text;
@@ -77,25 +77,50 @@ body{
     height:auto;
     margin:auto;
     background-color:#191919;
-    margin-top:10vh;
+    margin-top:7vh;
+    margin-bottom:7vh;
     display:flex;
     justify-content:space-between;
+    align-items: center;
+    border-radius:10px;
+    position: relative;
+}
+#img{
+    /* background-color: white; */
+    width:40vw;
 }
 .about img{
-    width:35vw;
+    width:33vw;
     height:auto;
-    margin:15vh 0vh 0vh 8vw;
+    margin:15vh 0vh 15vh 8vw;
+    border-radius:20px;
 }
 #about1{
-    background-color:red;
-    height:20px;
+    width:35vw;;
+    height:auto; 
+    font-size: large;
+    line-height: 1.5;
+    font-weight: 300;
+    margin:10vw 5vw;
 }
-#about2{
-    background-color: #3AC0CF;
+#about1 h3,h4{
+    font-weight: 500;
+    word-spacing: 1px;;
 }
-#about3{
-    background-color:green;
+#age::first-line{
+     color:#3AC0CF
 }
-about4{
-     background-color: yellow;
+@media screen and (max-width:789px) {
+    .about{
+        flex-direction: column;
+        
+    }
+    .about img{
+        width:35vw;
+        margin: 10vh auto;
+    }
+    #about1{
+        width:80%;
+        margin:auto;
+    }
 }
