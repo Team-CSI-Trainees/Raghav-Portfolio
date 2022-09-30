@@ -28,16 +28,21 @@ body{
     height:auto;
     display:flex;
     justify-content:space-between;
-    background-color: #191919;
+    /* background-color: #191919; */
     position: relative;
     border-radius: 10px;
     margin: auto;
+    overflow: hidden;
 }
   #intro-logo img{
     width:45vw;
     height:auto;
     position: relative;
     right: 3vw;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
 }
 #intro-name{
     text-align: left;
@@ -70,6 +75,25 @@ body{
     margin-top:5vh;
     margin-bottom:0;
    }
+}
+@keyframes slide {
+    0%{position:relative;bottom:0px}
+    50%{position:relative;bottom:10px;}
+    100%{position: relative;bottom:0px;}
+}
+#links a img{
+    width:3vw;
+    height:auto;
+    margin-top: 2vh;
+    border-radius: 100px;
+    background-color: white;
+    border: 1px solid white;
+} 
+
+#back-video{
+    z-index: -1;
+    position: absolute;
+    top:0;
 }
 /* .............................about.............................. */
 .about{
@@ -123,4 +147,232 @@ body{
         width:80%;
         margin:auto;
     }
+}
+.secbar{
+    position:absolute;
+    top:0;
+    right:0;
+    color:white;
+    padding:10px 15px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(120, 146, 194), #476e9e);
+}
+/* ...........skills.................. */
+.skills{
+    width:95%;
+    margin:7vh auto;;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #191919;
+    position: relative;
+}
+.html img{
+    background-color: white;
+    width:15vw;
+    height:15vw;
+    padding:10px;
+    margin:10vh 4vh 3vh 10vh;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+#java img{
+    margin:10vh 4vh 7vh 10vh;
+}
+.html img:hover{
+    box-shadow: 2px 2px 20px white;
+}
+
+/* ......................project..................... */
+.projects{
+    width:95%;
+    height:auto;
+    margin:7vh auto;
+    background-color: #CF1512;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #191919;
+    border-radius: 10px;
+    position:relative;
+}
+#project1{
+    height:30vw;
+    width:25vw;
+    margin:10vh 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#project2{
+    height:30vw;
+    width:25vw;
+    margin:10vh 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#project1 a img{
+    width:35vw;
+    margin-top:10vh;
+    border-radius: 10px;
+}
+#project1-text{
+    background-color: white;
+    color:black;
+    position: relative;
+    bottom:17vw;
+    padding:8px;
+    text-align: center;
+   transition-duration: 1s;
+}
+#project1 h4{
+    color:black;
+    background-color: yellow;
+    padding:10px;
+    
+}
+#project1-text p{
+    background-color: white;
+    color:black;
+    word-spacing: 3px;
+    font-weight: 400;
+    text-align: center;
+}
+#project2 a img{
+    width:35vw;
+    margin-top:10vh;
+}
+.view ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.view ul li a{
+    text-decoration: none;
+    background-color: #CF1512;
+    padding:8px 10px;
+    border-radius:7px;
+    color:white;
+}
+#project1-text:hover{
+    position:relative;
+    bottom:60vh;
+}
+#project2 a img{
+    width:35vw;
+    margin-top:10vh;
+    border-radius: 20px;
+}
+#project2-text{
+    background-color: white;
+    color:black;
+    position: relative;
+    bottom:35vh;
+    padding:8px;
+    text-align: center;
+   transition-duration: 1s;
+}
+#project2 h4{
+    color:black;
+    background-color: yellow;
+    padding:10px;
+    
+}
+#project2-text p{
+    background-color: white;
+    color:black;
+    word-spacing: 3px;
+    font-weight: 400;
+    text-align: center;
+}
+#project2-text:hover{
+    position:relative;
+    bottom:60vh;
+}
+/* ....................contact.................. */
+.contact-form{
+    width:95%;
+    height:auto;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius:10px;
+    position: relative;
+}
+#contact-control{
+    width:50%;
+    height:auto;
+    background-color: white;
+    padding:10px;
+    margin:2vw 0;
+    border-radius: 20px;
+
+}
+#contact-control form h3{
+    color:blue;
+    margin:2vh;
+    font-weight: 600;
+}
+#contact-control form p{
+    color:black;
+    font-weight: 300;
+    margin-top: -1vh;
+}
+.contact-areas{
+    width:90%;
+    height:auto;
+    margin:3vh;
+    padding:5px;
+}
+#contact-img img{
+    width:40vw;
+    height: a;
+    margin:2vw 0;
+}
+@media screen and (max-width:658px) {
+    #contact-control{
+        width:100%;
+    }
+    #contact-img img{
+        display: none;;
+    }
+}
+
+
+/*.............. footer................. */
+.footer{
+    background-color: #191919;
+    width:95%;
+    margin:auto;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 7vh;
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.footertxt{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:30vw;
+    margin:7vh 2vw 3vh 2vw;
+}
+.footertxt1{
+    display:flex;
+    flex-direction: column;
+    width:30vw;
+    margin:7vh 2vw 3vh 2vw;
+}
+.footertxt ul{
+    list-style: none;
+}
+.footertxt ul li{
+    text-decoration: none;;
+}
+.footertxt h5{
+    font-weight: 400;
+    font-size: 3vh;
+    margin-bottom: 3vh;
+    text-decoration: underline;
 }
