@@ -105,7 +105,7 @@ body{
 /* .............................about.............................. */
 #about{
     width:95%;
-    height:auto;
+    /* height:auto; */
     margin:auto;
     background-color:#191919;
     margin-top:7vh;
@@ -137,8 +137,21 @@ body{
     font-weight: 500;
     word-spacing: 1px;;
 }
-#age::first-line{
-     color:#3AC0CF
+#about1 a{
+    text-decoration: none;
+    color:black;
+    font-weight: 300;
+    background: linear-gradient(rgb(120, 146, 194), #476e9e);
+    padding:7px;
+    border-radius: 5px;
+}
+#about1 a:hover{
+    background: linear-gradient( #476e9e,rgb(120, 146, 194));
+}
+#disclaimer{
+    font-size: 8px;
+    font-weight: 100;
+    margin: 10px 10px 10px 0;
 }
 @media screen and (max-width:789px) {
     #about{
@@ -332,7 +345,7 @@ body{
 }
 .footertxt h5{
     font-weight: 400;
-    font-size: 4vh;
+    font-size: 3vh;
     margin-bottom: 3vh;
     text-decoration: underline;
 }
