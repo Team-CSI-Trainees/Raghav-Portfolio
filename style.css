@@ -389,9 +389,24 @@ body{
     margin-bottom: 3vh;
     text-decoration: underline;
 }
+#footertxt3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:30vw;
+    margin:7vh 2vw 3vh 2vw;
+}
 @media  screen and (max-width:680px){
-    #footertxt3{
-        font-size: 100;
+    .footer{
+       font-weight: 200;
     }
+    .footertxt h5{
+        font-size: medium;
+    }
+    #footertxt3{
+        font-size: 2vw;
+    }
+        
+    
 }
     
