@@ -18,7 +18,7 @@ body{
     margin-left: 5vw;
 }
 .navbar{
-    padding:5vh 0;
+    padding:4vh 0 2vh 0;
 }
 .navbar ul li a{
     text-decoration:none;
@@ -64,16 +64,12 @@ body{
     word-spacing: 3px;
 }
 .intro-style{
-    background: #3AC0CF;
+    font-family: 'Merriweather', serif;
+    font-size: 4vw;
     background: linear-gradient(to right, #3AC0CF 0%, #CF1512 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#intro-name p{
-    font-weight: 200;
-    font-size:2vw;
-    margin-top:2px;
-}  
 @media screen and (max-width:697px){
    #intro{
     flex-direction:column;
@@ -81,6 +77,9 @@ body{
    #intro-name{
     margin-top:5vh;
     margin-bottom:0;
+   }
+   .intro-style{
+    font-size: 5vw;
    }
 }
 @keyframes slide {
@@ -105,19 +104,23 @@ body{
 /* .............................about.............................. */
 #about{
     width:95%;
-    /* height:auto; */
     margin:auto;
-    background-color:#191919;
+    background-image: url("images/droplets.jpg");
     margin-top:7vh;
     margin-bottom:7vh;
     display:flex;
+    flex-direction: column;
     justify-content:space-between;
     align-items: center;
     border-radius:10px;
-    position: relative;
 }
 #img{
     width:40vw;
+    margin-right: 5vw;
+}
+.about-sec{
+    display: flex;
+    justify-content: space-between;
 }
 #about img{
     width:33vw;
@@ -154,9 +157,9 @@ body{
     margin: 10px 10px 10px 0;
 }
 @media screen and (max-width:789px) {
-    #about{
+    .about-sec{
         flex-direction: column;
-        
+        align-items: center;
     }
     #about img{
         width:35vw;
@@ -177,7 +180,7 @@ body{
     background: linear-gradient(rgb(120, 146, 194), #476e9e);
 }
 
-
+/* ................skills.................. */
 .skills{
     width:95%;
     height:auto;
@@ -218,6 +221,7 @@ body{
 .div-box img{
     width:47px;
     height: auto;
+    margin-top:20px;
 }
 .div-box p{
     margin-top: 20px;
@@ -241,66 +245,41 @@ body{
     }
 
 }
-
-
-
-
-
-
-
-/* ......................project..................... */
-#project{
-    width:95%;
-    margin:7vh auto;
-    background-color: #191919;
-    border-radius: 10px;
-    display:flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-#ideas{
-    width:300px;
-    height:400px;
-    background-color: #3AC0CF;
-    margin: 7vh auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    object-fit: fill;
-}
-.layer{
-    width:100%;
-    height:100%;
-    position: absolute;
-    top:0;
-    left:0;
-    display:flex;
+/*............projects.............. */
+.carousel-inner{
+    width: 95%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: ease-in-out;
-    
+    margin: 0 auto 7vh auto;
+    background-image: url("images/droplets.jpg");
+    border-radius: 10px;
 }
-.layer a{
-     background-color:#e4685d;
-     text-decoration: none;
-     margin:10px 0;
-     color: white;
-     font-weight: 300;
-     border-radius: 5px;
-     padding: 5px 10px;
+.carousel-item{
+    width:50%;
+    margin:7vh auto;
+
 }
-.layer:hover{
-    background:linear-gradient(rgb(120, 146, 194), #476e9e);
-    opacity: 100;
+.carousel-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 3vh 0 3vh 0;
 }
-@media screen and (max-width:695px) {
-    #project{
-        flex-direction: column;
-        align-items: center;
-    }
-    
+.carousel-text h4{
+     font-weight: 500;
+}
+.carousel-text p{
+    font-weight: 200;
+}
+.carousel-layer a{
+    text-decoration: none;
+    margin: 0 20px;
+    background: linear-gradient(rgb(120, 146, 194), #476e9e);
+    color: white;
+    padding:5px 10px;
+    border-radius: 5px;
 }
 /* ....................contact.................. */
 #contact-form{
