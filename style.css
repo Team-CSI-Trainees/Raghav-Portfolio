@@ -176,31 +176,77 @@ body{
     border-radius: 5px;
     background: linear-gradient(rgb(120, 146, 194), #476e9e);
 }
-/* ...........skills.................. */
-#skills{
+
+
+.skills{
     width:95%;
-    margin:7vh auto;;
-    display:flex;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:7vh auto;
+    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    border-radius: 10px;
+}
+#depict{
+    margin-top: 3vh;
+    letter-spacing: 1px;
+    
+}
+
+.resize-skills{
+    width:720px;
+    height:auto;
+    margin:20px auto;
+    border-radius: 10px;
+    background: rgba(0, 0, 22, 0.4);
+    display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.div-box{
+    width:120px;
+    height:120px;
+    background: rgba(10, 10, 19, 0.9);
+    border-radius: 10px;
+    display: flex;
     justify-content: center;
-    background-color: #191919;
-    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin:15px 5px;
 }
-.html img{
-    background-color: white;
-    width:15vw;
-    height:15vw;
-    padding:10px;
-    margin:10vh 4vh 3vh 10vh;
-    transition: ease-in-out;
-    transition-duration: 0.2s;
+.div-box img{
+    width:47px;
+    height: auto;
 }
-#java img{
-    margin:10vh 4vh 7vh 10vh;
+.div-box p{
+    margin-top: 20px;
+    font-size: 17px;
 }
-.html img:hover{
-    box-shadow: 2px 2px 20px white;
+#small img{
+    width:60px;
 }
+.div-box:hover{
+    background-color: black;
+}
+@media screen and (max-width:872px){
+    .resize-skills{
+        width:500px;
+    }
+
+}
+@media screen and (max-width:616px){
+    .resize-skills{
+        width:300px;
+    }
+
+}
+
+
+
+
+
+
 
 /* ......................project..................... */
 #project{
