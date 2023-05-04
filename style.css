@@ -105,7 +105,7 @@ body{
 #about{
     width:95%;
     margin:auto;
-    background-image: url("images/droplets.jpg");
+    background-image: url("abstractbg4.jpg");
     margin-top:7vh;
     margin-bottom:7vh;
     display:flex;
@@ -252,7 +252,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0 auto 7vh auto;
-    background-image: url("images/droplets.jpg");
+    background-image: url("abstractbg4.jpg");
     border-radius: 10px;
 }
 .carousel-item{
@@ -342,7 +342,8 @@ body{
     justify-content: space-evenly;
     margin-top: 7vh;
     border-radius: 10px;
-    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
     line-height: 22px;
 }
 .footertxt{
